@@ -1,0 +1,347 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: M223_Schulprojekt
+meta:
+  id: wrk_eef9e061ae0a4091ba168531680bda0c
+  created: 1776150991289
+  modified: 1776150991289
+  description: ""
+collection:
+  - url: http://localhost:8080/private/
+    name: New Request
+    meta:
+      id: req_d6ea654709084c10869c469bcbaea584
+      created: 1776151013617
+      modified: 1778588571595
+      isPrivate: false
+      description: ""
+      sortKey: -1776151013617
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    authentication:
+      type: bearer
+      disabled: false
+      token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbGVuIiwiaWF0IjoxNzc4NTg4NTE2LCJleHAiOjE3Nzg1ODk1MTZ9.z-ATuLhrhBqL7rjWAcbyP8Qw7bdZYozJ0M0fK9b5wnE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/auth/signup
+    name: Register_User
+    meta:
+      id: req_57debcd0bf3b43f09accd557c3260d53
+      created: 1778575431143
+      modified: 1779169031774
+      isPrivate: false
+      description: ""
+      sortKey: -1778575431143
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"Alen",
+        	"email":"a.a@gmail.com",
+        	"password":"123456789"
+        	
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/auth/login
+    name: Login_User
+    meta:
+      id: req_89df357bf4e548f9893909db64b14dfd
+      created: 1778577042603
+      modified: 1779169037206
+      isPrivate: false
+      description: ""
+      sortKey: -1777363222380
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"Alen",
+        	"password":"123456789"
+        	
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/groups
+    name: Register_Group
+    meta:
+      id: req_fc4627df98ea44438601221ec8514dc7
+      created: 1779131963002
+      modified: 1779134352769
+      isPrivate: false
+      description: ""
+      sortKey: -1779131963002
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Gaming"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbGVuIiwiaWF0IjoxNzc5MTM0MzA4LCJleHAiOjE3NzkxMzUzMDh9.vQQ-1BALi4DHepe6l7qwUZQachlkz-NIdZ_pM-f_AGE
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/groups/3/join
+    name: Member_Join-Request
+    meta:
+      id: req_10e1365ebccd4280b960e8614025ee83
+      created: 1779132896234
+      modified: 1779172252420
+      isPrivate: false
+      description: ""
+      sortKey: -1779132896234
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUZXN0IiwiaWF0IjoxNzc5MTcyMjIwLCJleHAiOjE3NzkxNzMyMjB9.I0n2Z2yq52D8821dHNdy7dXVBxvHLbWIB8DS8bo9ke8
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/groups/3/messages
+    name: Send Message
+    meta:
+      id: req_44bed215c8334804a2bff0c0652b02ee
+      created: 1779169040242
+      modified: 1779170106271
+      isPrivate: false
+      description: ""
+      sortKey: -1779169040242
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "content": "hello"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbGVuIiwiaWF0IjoxNzc5MTcwMDM1LCJleHAiOjE3NzkxNzEwMzV9.KCylUjNy25UNB7uI39uaYQ0zGN1vx4sCy9jz5YwlbjM
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/groups/3/messages
+    name: Get Messages
+    meta:
+      id: req_d5e38a9a5b634098851f7cf98190e830
+      created: 1779169146756
+      modified: 1779170133303
+      isPrivate: false
+      description: ""
+      sortKey: -1779169146756
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbGVuIiwiaWF0IjoxNzc5MTcwMDM1LCJleHAiOjE3NzkxNzEwMzV9.KCylUjNy25UNB7uI39uaYQ0zGN1vx4sCy9jz5YwlbjM
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/groups/my
+    name: Get Groups
+    meta:
+      id: req_6fc204a100c3405e8eb68a0a7b10aa8f
+      created: 1779169898282
+      modified: 1779171263276
+      isPrivate: false
+      description: ""
+      sortKey: -1779169898282
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+      - name: Authorization
+        value: Bearer
+          eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBbGVuIiwiaWF0IjoxNzc5MTcxMjM1LCJleHAiOjE3NzkxNzIyMzV9.TILlqt_7SijN1LDfZyfL3WiQGq_HJS33BfcwH5Wkbws
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/auth/signup
+    name: Test_Register_User
+    meta:
+      id: req_ca4cb634e69b418095192563572fcdbd
+      created: 1779172127212
+      modified: 1779172148909
+      isPrivate: false
+      description: ""
+      sortKey: -1777969326761.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username":"Test",
+        	"email":"test.test@gmail.com",
+        	"password":"123456789"
+        	
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/auth/login
+    name: Test_Login_User
+    meta:
+      id: req_e745b1f98aac45aeb3b8e40d3ce8baeb
+      created: 1779172204155
+      modified: 1779176459506
+      isPrivate: false
+      description: ""
+      sortKey: -1776757117998.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "Test",
+          "password": "123456789"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c93d7f54e1e799b88bf5e49caaaf770cedcdf8e6
+    created: 1776150991295
+    modified: 1776151308609
+  cookies:
+    - id: 4c0a7ad2-5bdd-4eb2-88f3-6d89943e47e6
+      key: JSESSIONID
+      value: 41ADBF49D1E22D0D5CF5086A069EAF2E
+      domain: localhost
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_c93d7f54e1e799b88bf5e49caaaf770cedcdf8e6
+    created: 1776150991293
+    modified: 1776150991293
+    isPrivate: false
